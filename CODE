@@ -1,0 +1,9 @@
+import nltk
+from nltk.stem import porter stemmer
+from nltk.tokenize import word_tokenize
+nltk.download('punkt')
+ps = porterstemmer()
+sentence = "programming"
+words = word_tokenize(sentence)
+for w in words:
+  print(w,":",ps.stem(w))
